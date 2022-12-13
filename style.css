@@ -118,8 +118,27 @@ body {
 }
 
 .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     border-left: 0.5rem solid rgba(240,179,42,255);
     border-radius: 0.5rem;
-    box-shadow: 1rem;
+    box-shadow: 0.2rem 0.2rem rgb(161, 159, 159);
+    padding: 0 0.5rem 0.5rem 1rem;
+}
+
+.details > .title {
+    font-size: 1.25rem;
+}
+
+.details > .text {
+    color: rgb(78, 77, 77);
+}
+
+.interactables {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    gap: 2rem;
 }
